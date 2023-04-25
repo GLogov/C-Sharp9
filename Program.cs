@@ -12,7 +12,7 @@ if (n < 1)
 }
 Console.WriteLine(NaturalNumber(n, m));
 
-int NaturalNumber(int n, int m)
+int NaturalNumber(int n, int m) // Все натуральные числа в промежутке от N до 1
 {
     if (n == m)
         return n;
