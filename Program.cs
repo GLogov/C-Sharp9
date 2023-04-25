@@ -11,7 +11,7 @@ int n = int.Parse(Console.ReadLine());
 Console.WriteLine($"Сумма элементов от {m} до {n} = {CountNaturalSum(m, n)}");
 
 
-int CountNaturalSum(int m, int n)
+int CountNaturalSum(int m, int n) // вычисление суммы натуральных элементов от М до N
 {
     if (m == n)
         return n;
