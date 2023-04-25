@@ -3,8 +3,8 @@
 // N = 5 -> "5, 4, 3, 2, 1"
 // N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 
-
-int n = InputInt("Введите положительное число: ");
+Console.Write("Введите положительное число: ");
+int n = int.Parse(Console.ReadLine());
 int m = 1;
 if (n < 1)
 {
@@ -19,10 +19,4 @@ int NaturalNumber(int n, int m)
     else
         Console.Write($"{NaturalNumber(n, m + 1)}, ");
     return m;
-}
-
-int InputInt(string output)
-{
-    Console.Write(output);
-    return int.Parse(Console.ReadLine());
 }
